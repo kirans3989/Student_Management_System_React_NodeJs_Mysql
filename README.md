@@ -33,8 +33,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/student-management-system.git
-   cd student-management-system
+   git clone https://github.com/kirans3989/Student_Management_System_React_NodeJs_Mysql.git
+   cd Student_Management_System_React_NodeJs_Mysq
    ```
 
 2. **Environment Setup**
