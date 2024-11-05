@@ -9,6 +9,22 @@ interface StudentListProps {
 }
 
 export default function StudentList({ students, onEdit, onDelete }: StudentListProps) {
+  if (!Array.isArray(students)) {
+    return (
+      <div className="bg-yellow-50 border border-yellow-200 rounded-md p-4">
+        <p className="text-yellow-700">No students data available</p>
+      </div>
+    );
+  }
+
+  if (students.length === 0) {
+    return (
+      <div className="bg-white rounded-lg shadow p-6 text-center">
+        <p className="text-gray-500">No students found. Add your first student using the button above.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="overflow-x-auto bg-white rounded-lg shadow">
       <table className="min-w-full divide-y divide-gray-200">
@@ -35,7 +51,7 @@ export default function StudentList({ students, onEdit, onDelete }: StudentListP
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 <div className="flex space-x-2">
                   <button
-                    onClick={() => student.id && onEdit(student)}
+                    onClick={() => onEdit(student)}
                     className="text-blue-600 hover:text-blue-900"
                   >
                     <Pencil className="h-5 w-5" />

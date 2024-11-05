@@ -33,8 +33,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/kirans3989/Student_Management_System_React_NodeJs_Mysql.git
-   cd Student_Management_System_React_NodeJs_Mysq
+   git clone https://github.com/yourusername/student-management-system.git
+   cd student-management-system
    ```
 
 2. **Environment Setup**
@@ -163,7 +163,9 @@ For production deployment, additional steps are recommended:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
